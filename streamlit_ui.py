@@ -1,12 +1,12 @@
 import streamlit as st
 import requests
 
-API_URL = "http://127.0.0.1:8003/execute" 
+API_URL = "http://127.0.0.1:8002/execute" 
 
 st.title("🩺 Doctor Appointment System")
 
-user_id = st.text_input("Enter your ID number:", "")
-query = st.text_area("Enter your query:", "Can you check if a dentist is available tomorrow at 10 AM?")
+user_id = st.text_input("Enter your ID number:", "1000082")
+query = st.text_area("Enter your query:", "Can you check and make a booking if general dentist available on 8 august 2024 at 8 pm?")
 
 if st.button("Submit Query"):
     if user_id and query:
